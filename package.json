@@ -1,7 +1,7 @@
 {
   "name": "m403",
   "version": "1.0.0",
-  "description": "m403模板",
+  "description": "模板",
   "main": "postcss.config.js",
   "scripts": {
     "serve": "npx webpack-dev-server",
