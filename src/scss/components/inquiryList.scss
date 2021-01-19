@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+.inquiry-pro-list {
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  margin: 50px 0;
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  padding: 0 100px;
+  .inquiry-pro-item {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    padding: 40px 10px;
+    margin-top: 0;
+    box-sizing: content-box;
+    .pro-item-img {
+      height: 100%;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      a {
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        height: 100%;
+      }
+    }
+    .pro-item-name {
+      padding-top: 30px;
+      margin-left: 50px;
+      font-size: 14px;
+      a {
+        font-size: 16px;
+      }
+      a:hover {
+        color: $mainColor;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .pro-item-del {
+      position: relative;
+      padding-top: 20px;
+      height: 100%;
+      width: 200px;
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .ic-close {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: -6px;
+        top: 43px;
+        &:before,
+        &:after {
+          position: absolute;
+          left: 15px;
+          content: "";
+          height: 20px;
+          width: 2px;
+          background-color: #333;
+        }
+        &:before {
+          transform: rotate(45deg);
+        }
+        &:after {
+          transform: rotate(-45deg);
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .inquiry-pro-list {
+    padding: vm(0.1 * 75)  vm(0.5 * 75);
+    .inquiry-pro-item {
+      box-sizing: border-box;
+      padding: vm(0.3 * 75);
+      margin: 0;
+      height: vm(2 * 75);
+      .pro-item-del {
+        padding-top: 0;
+        width: vm(1 * 75);
+        .ic-close {
+          right: 0;
+          top: 4vw;
+        }
+      }
+      .pro-item-name {
+        font-size: vm(0.3 * 75);
+        padding: 0;
+        margin: 0;
+        padding-top: vm(0.2 * 75);
+        max-width: vm(4.8 * 75);
+        p {
+          a {
+           font-size: vm(0.32 * 75);
+           overflow: hidden;
+           text-overflow: ellipsis;
+           display: -webkit-box;
+           -webkit-line-clamp: 1;
+           -webkit-box-orient: vertical;
+          }
+        }
+      }
+      .pro-item-img {
+        min-width: vm(2.4 * 75);
+        margin-right: vm(0.3 * 75);
+        width: auto;
+      }
+    }
+  }
+}

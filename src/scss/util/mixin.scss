@@ -1,0 +1,39 @@
+@mixin textMultLineOverflowEllipsis($oneLineHeight, $lineNbr) {
+  //多行文本省略
+  display: -webkit-box;
+  display: -moz-box;
+  max-height: $oneLineHeight*$lineNbr;
+  line-height: $oneLineHeight;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lineNbr;
+  overflow: hidden;
+}
+
+@mixin textOverflowEllipsis() {
+  //文本单行省略
+  //WRING:文本包裹层必须有非百分比定宽
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin linef($value: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  -webkit-box-orient: vertical;
+}
+
+@mixin squareBox() {
+  // 自适应正方形
+  &:after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
+}

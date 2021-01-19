@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+// 移动端
+@media screen and (max-width: 768px) {
+  .newslist-0 {
+    width: vm(670);
+    box-sizing: border-box;
+    margin-top: vm(40);
+  }
+  .newslist-0 li {
+    padding: 5px;
+    height: vm(180);
+    .left-box {
+      width: vm(150);
+      height: vm(150);
+    }
+    .time em {
+      padding: 5px 5px 0;
+      font-size: 18px;
+    }
+    .time span {
+      display: block;
+      text-align: center;
+      padding: 0;
+      font-size: 16px;
+    }
+    .right-box {
+      margin-left: vm(180);
+    }
+    .info p {
+      height: 36px;
+      line-height: 18px;
+      padding-right: 10px;
+      margin: 0;
+      margin-top: vm(10);
+    }
+    .info h4 {
+      padding: 5px 0;
+      font-size: 17px;
+    }
+  }
+  .newslist-1 {
+    justify-content: space-between;
+  }
+  .newslist-1 li {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: vm(40);
+    .news-img {
+      height: auto;
+    }
+    .news-info {
+      padding: 5px;
+    }
+    .news-title {
+      font-size: 16px;
+      height: 36px;
+      max-height: 36px;
+      line-height: 18px;
+    }
+    .news-text {
+      margin-top: vm(10);
+      -webkit-line-clamp: 2;
+      font-size: 14px;
+      color: #707070;
+      height: 34px;
+      max-height: 34px;
+      line-height: 16px;
+      margin-bottom: 5px;
+    }
+    .news-date {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}

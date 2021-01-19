@@ -1,0 +1,122 @@
+.preview-container {
+  position: relative;
+  width: 450px;
+  .small-box {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .hover {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background-color: rgba($color: #ccc, $alpha: 0.6);
+      border: 1px solid #eee;
+      display: none;
+    }
+  }
+  .thumbnail-box {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    .list {
+      overflow: hidden;
+      width: 390px;
+      margin: 0 auto;
+      position: relative;
+      ul {
+        width: 100000px;
+        display: flex;
+        .item {
+          width: 58px;
+          height: 58px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 10px;
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          &:hover {
+            cursor: pointer;
+          }
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+        .item-cur {
+          border: 1px solid $mainColor;
+        }
+      }
+      .banner-page {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: vm(50);
+        width: vm(100);
+        border-radius: vm(40);
+        background: rgba(0, 0, 0, 0.8);
+        bottom: vm(10);
+        right: vm(10);
+        z-index: 999;
+        span {
+          color: #ffffff;
+          font-size: vm(30);
+        }
+      }
+    }
+    .btn {
+      position: absolute;
+      top: 50%;
+      width: 22px;
+      height: 32px;
+      margin-top: -16px;
+    }
+    .btn-prev {
+      left: 0;
+      background: url(/src/images/products/btn_prev.png) no-repeat;
+    }
+    .btn-next {
+      right: 0;
+      background: url(/src/images/products/btn_next.png) no-repeat;
+    }
+    .btn_prev_disabled {
+      background: url(/src/images/products/btn_prev_disabled.png) no-repeat;
+      cursor: not-allowed;
+    }
+    .btn_next_disabled {
+      background: url(/src/images/products/btn_next_disabled.png) no-repeat;
+      cursor: not-allowed;
+    }
+  }
+  .big-box {
+    display: none;
+    overflow: hidden;
+    top: 0;
+    left: 449px;
+    border: 1px solid #eee;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 20;
+    img {
+      display: block;
+      max-width: none;
+      max-height: none;
+      width: 130%;
+    }
+  }
+}

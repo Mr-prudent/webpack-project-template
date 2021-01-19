@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.newslist-0 {
+  li {
+    height: 114px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    padding: 7px;
+    .left-box {
+      float: left;
+      width: 100px;
+      border: 1px solid #ddd;
+      height: 100px;
+    }
+    .right-box {
+      margin-left: 120px;
+    }
+    .info h4 {
+      padding: 8px 0;
+      font-size: 18px;
+      line-height: 25px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-weight: 700;
+      transition: color ease 0.3s;
+    }
+    .info p {
+      height: 50px;
+      line-height: 25px;
+      padding-right: 14px;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      color: #333;
+      text-align: left;
+      padding-bottom: 0;
+    }
+    .time em {
+      display: block;
+      font-size: 22px;
+      padding: 17px 10px 0 10px;
+      line-height: 40px;
+      font-weight: 700;
+    }
+    .time span {
+      font-size: 18px;
+      padding: 10px 0 10px 10px;
+    }
+    &:nth-of-type(2n) {
+      background-color: #f2f2f2;
+    }
+    &:hover {
+      background: #efefef;
+      transform: translateX(5px);
+      h4 {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.newslist-1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: calc(33.333%-20px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    transition: all ease 0.3s;
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+    }
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+    .news-img {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .news-info {
+      padding: 8px;
+    }
+    .news-title {
+      color: #4c4c4c;
+      font-size: 18px;
+      height: 48px;
+      @include textMultLineOverflowEllipsis(24px, 2);
+    }
+    .news-text {
+      font-size: 14px;
+      color: #707070;
+      height: 60px;
+      @include textMultLineOverflowEllipsis(20px, 3);
+      margin-bottom: 10px;
+    }
+    .news-date {
+      color: #707070;
+      font-weight: bold;
+    }
+  }
+}
+
+.news-content {
+  h1 {
+    padding-bottom: 20px;
+  }
+  .news-date {
+    text-align: center;
+    font-size: 18px;
+  }
+  article {
+    margin-top: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+}

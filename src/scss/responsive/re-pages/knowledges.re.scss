@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@media (min-width: 1281px) and (max-width: 1520px) {
+  .knowledges-content {
+    margin: 0 100px;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+  .knowledges-content {
+    margin: 0 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1081px) {
+  .knowledges-content {
+    margin: 0 25px;
+  }
+}
+
+// 移动端
+@media screen and (max-width: 768px) {
+  .common-container {
+    .knowledges-content {
+      margin: 0 vm(50);
+      .knowledges-list {
+        margin: vm(50) 0;
+        justify-content: space-between;
+        .list-1 {
+          height: vm(240);
+          padding: 0 vm(40);
+          margin-bottom: vm(50);
+          .knowledges-img {
+            display: none;
+          }
+          .knowledges-info {
+            .knowledges-date {
+              font-size: vm(30);
+              line-height: vm(34);
+              transform: scale(0.8);
+              position: relative;
+              left: vm(-55);
+            }
+            .knowledges-title {
+              margin: vm(10) 0;
+              a {
+                font-size: vm(34);
+                line-height: vm(36);
+              }
+            }
+            .knowledges-text {
+              margin: 0;
+              margin-bottom: vm(10);
+              a {
+                font-size: vm(30);
+                line-height: vm(34);
+              }
+            }
+            .more-btn {
+              font-size: vm(30);
+              position: relative;
+              i {
+                position: absolute;
+                top: 1.2px;
+                left: vm(160);
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+        .list-2 {
+          margin-bottom: vm(50);
+          width: 46%;
+          margin-right: vm(30);
+          &:nth-of-type(3n) {
+            margin-right: vm(30);
+          }
+          &:nth-of-type(2n) {
+            margin-right: 0;
+          }
+          .knowledges-info {
+            .knowledges-date {
+              line-height: vm(24);
+              font-size: vm(24);
+            }
+            .knowledges-title {
+              margin-top: vm(10);
+              a {
+                font-size: vm(30);
+                line-height: vm(32);
+              }
+            }
+            .knowledges-text {
+              margin: vm(20) 0;
+              a {
+                font-size: vm(25);
+                line-height: vm(30);
+                @include linef(2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

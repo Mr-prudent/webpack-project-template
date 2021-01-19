@@ -1,0 +1,73 @@
+.share-btn-list {
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.share-btn-list .share-btn {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  transition: 0.4s all;
+  transition-delay: 0.03s;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.share-btn-list .share-btn:hover {
+  transform: translateY(-6px);
+}
+
+.share-btn-list .facebook {
+  background: url(/src/images/share-facebook.png) no-repeat;
+  background-size: 30px 30px;
+}
+
+.share-btn-list .twitter {
+  background: url(/src/images/share-twitter.png) no-repeat;
+  background-size: 37px 37px;
+  background-position: -4px -4px;
+}
+
+.share-btn-list .linkedin {
+  background: url(/src/images/share-linkedin.png) no-repeat;
+  background-size: 36px 36px;
+  background-position: -4px -4px;
+}
+
+.share-btn-list .pinterest {
+  background: url(/src/images/share-pinterest.png) no-repeat;
+  background-size: 32px 32px;
+  background-position: -2px -2px;
+}
+
+@media (max-width: 768px) {
+  .share-btn-list {
+    width: 120px;
+  }
+  .share-btn-list .share-btn:hover {
+    transform: translateY(0);
+  }
+  .share-btn-list .share-btn {
+    width: 25px;
+    height: 25px;
+  }
+  .share-btn-list .facebook {
+    background-size: 23px 23px;
+  }
+  .share-btn-list .twitter {
+    background-size: 30px 30px;
+    background-position: -3px -3px;
+  }
+  .share-btn-list .linkedin {
+    background-size: 30px 30px;
+    background-position: -3px -3px;
+  }
+  .share-btn-list .pinterest {
+    background-size: 26px 26px;
+    background-position: -1px -1px;
+  }
+}

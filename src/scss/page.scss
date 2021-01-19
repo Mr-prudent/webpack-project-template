@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+// PC端
+@import "./util/reset.scss";
+@import "./util/layout.scss";
+@import "./util/mixin.scss";
+@import "./util/box.scss";
+@import "./common.scss";
+@import "./pages/home.scss";
+// @import "./pages/singlePage.scss";
+// @import "./pages/abouts.scss";
+@import "./pages/products.scss";
+@import "./pages/news.scss";
+// @import "./pages/knowledges.scss";
+// @import "./pages/newsContent.scss";
+// @import "./pages/knowledgesContent.scss";
+// @import "./pages/productsContent.scss";
+@import "./pages/contact.scss";
+// @import "./pages/inquiry.scss";
+
+// 响应式
+@import "./responsive/common.re.scss";
+@import "./responsive/re-pages/home-re.scss";
+// @import "./responsive/re-pages/abouts-re.scss";
+@import "./responsive/re-pages/news-re.scss";
+// @import "./responsive/re-pages/knowledges.re.scss";
+// @import "./responsive/re-pages/contact.re.scss";
+@import "./responsive/re-pages/products.re.scss";
+// @import "./responsive/re-pages/productContent.re.scss";
+// @import "./responsive/re-pages/newsContent.re.scss";
+// @import "./responsive/re-pages/knowledgesContent.re.scss";
+// @import "./responsive/re-pages/inquiry.re.scss";
+
+// 组件样式
+@import "./components/hover.scss";
+// @import "./components/swiper.scss";
+@import "./components/preview.scss";
+@import "./components/inquiry.scss";
+@import "./components/addInquiry.scss";
+@import "./components/inquiryList.scss";

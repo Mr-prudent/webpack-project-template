@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@media (min-width: 1281px) and (max-width: 1520px) {
+  .common-container {
+    .feedback-content {
+      padding: 0 100px 50px;
+    }
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+  .common-container {
+    .feedback-content {
+      padding: 0 50px 50px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1081px) {
+  .common-container {
+    .feedback-content {
+      padding: 0 25px 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .common-container {
+    .feedback-content {
+      margin: 0;
+      padding: vm(50) vm(50) 0;
+      flex-direction: column;
+      .feedback-main {
+        margin-top: 0;
+        margin-left: 0;
+        flex: 1;
+        .feedback-tips {
+          margin-bottom: vm(50);
+          p {
+            line-height: 1.6em;
+          }
+        }
+        .send-inquiry {
+          .inquiry-form {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

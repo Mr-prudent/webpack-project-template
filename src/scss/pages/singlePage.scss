@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.common-container {
+  .inner-banner {
+    min-height: 50px;
+    background: #f1f1f1;
+    width: 100%;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  .breadcrumbs-nav {
+    position: relative;
+    height: 78px;
+    padding: 0 260px;
+    border-bottom: 1px solid #ececec;
+    color: #989898;
+    a,
+    h1,
+    h2 {
+      color: #989898;
+      line-height: 78px;
+      margin: 0 10px;
+    }
+    h1,
+    h2 {
+      display: inline;
+      font-size: 16px;
+      color: #2b2b2b;
+      a {
+        color: #2b2b2b;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+// PC端
+@media (min-width: 1281px) and (max-width: 1520px) {
+  .knowledges-detail-content {
+    padding: 0 100px;
+    .knowledges-title {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+  .knowledges-detail-content {
+    padding: 0 50px;
+    .knowledges-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1081px) {
+  .knowledges-detail-content {
+    padding: 0 25px;
+    .knowledges-title {
+      font-size: 18px;
+    }
+  }
+}
+
+// 移动端
+@media screen and (max-width: 768px) {
+  .knowledges-detail-content {
+    margin: vm(100) 0;
+    padding: 0 vm(50);
+    .knowledges-title {
+      padding: 0;
+      font-size: vm(30);
+      line-height: vm(40);
+    }
+    .knowledges-date {
+      margin: vm(30) 0;
+      line-height: vm(48);
+    }
+    article {
+      p {
+        margin-top: vm(30);
+        line-height: vm(34);
+        &:nth-of-type(1) {
+          margin-top: 0;
+        }
+      }
+    }
+    span.line {
+      margin: vm(50) 0;
+    }
+    .pages-list {
+      div,
+      span,
+      a {
+        line-height: vm(40);
+      }
+      div {
+        margin-top: vm(20);
+      }
+    }
+  }
+}

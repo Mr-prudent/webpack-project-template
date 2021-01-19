@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.common-container {
+  .feedback-content {
+    margin: 50px 0;
+    padding: 0 260px;
+    display: flex;
+    .feedback-main {
+      margin-left: 20px;
+      flex: 1;
+      .feedback-tips {
+        margin-bottom: 50px;
+        p {
+          line-height: 30px;
+          a {
+            color: $mainColor;
+          }
+        }
+      }
+      .send-inquiry {
+        .inquiry-form {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}

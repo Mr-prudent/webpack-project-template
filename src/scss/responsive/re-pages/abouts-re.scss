@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+@media (min-width: 1281px) and (max-width: 1520px) {
+  .abouts-content {
+    padding: 0 100px 50px;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1280px) {
+  .abouts-content {
+    padding: 0 50px 50px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1081px) {
+  .abouts-content {
+    padding: 0 25px 50px;
+  }
+}
+
+// 移动端
+
+@media screen and (max-width: 768px) {
+  .abouts-content {
+    padding: 0 vm(50);
+    .abouts-title {
+      margin-top: vm(50);
+      font-size: vm(34);
+      padding: vm(10) 0;
+      margin-bottom: vm(1);
+    }
+    article {
+      div {
+        margin-bottom: vm(30);
+      }
+      .title {
+        margin-top: vm(16);
+        font-size: vm(30);
+      }
+      .title, .content {
+        line-height: vm(40);
+      }
+      .content {
+        width: 100%;
+      }
+      .imgs-list {
+        margin-top: vm(10);
+        li {
+          display: none;
+          padding-right: vm(50);
+          &:nth-child(1) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

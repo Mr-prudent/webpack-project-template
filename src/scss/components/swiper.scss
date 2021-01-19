@@ -1,0 +1,12 @@
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-lazy-preloader {
+  width: 30px!important;
+  height: 30px!important;
+  border: 2px solid #000!important;
+  border-radius: 50%!important;
+  border-top-color: transparent!important;
+}

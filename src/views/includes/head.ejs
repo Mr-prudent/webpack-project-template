@@ -1,0 +1,155 @@
+<header class="head flex-wrapper">
+  <div class="head-wrapper">
+    <div class="head-logo flex">
+      <a href="./index.html">
+        <img src="../images/common/logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="nav-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="head-nav">
+      <ul>
+        <% if (indexPage == 'home') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu_1">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="./news.html" class="inmenu">News</a></li>
+          <li id="liInfo"><a href="./info.html" class="inmenu">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu">Feedback</a></li>
+        <% } %>
+        <% if (indexPage == 'about') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu_1">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="./news.html" class="inmenu">News</a></li>
+          <li id="liInfo"><a href="./info.html" class="inmenu">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu">Feedback</a></li>
+        <% } %>
+        <% if (indexPage == 'products') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu_1">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="./news.html" class="inmenu">News</a></li>
+          <li id="liInfo"><a href="./info.html" class="inmenu">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu">Feedback</a></li>
+        <% } %>
+        <% if (indexPage == 'news') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="#" class="inmenu_1">News</a></li>
+          <li id="liInfo"><a href="./info.html" class="inmenu">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu">Feedback</a></li>
+        <% } %>
+        <% if (indexPage == 'knowledges') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="./news.html" class="inmenu">News</a></li>
+          <li id="liInfo"><a href="#" class="inmenu_1">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu">Feedback</a></li>
+        <% } %>
+        <% if (indexPage == 'contact') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="./news.html" class="inmenu">News</a></li>
+          <li id="liInfo"><a href="./info.html" class="inmenu">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu_1">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu">Feedback</a></li>
+        <% } %>
+        <% if (indexPage == 'feedback') { %>
+          <li id="liHome"> <a href="./index.html" class="inmenu">Home</a></li>
+          <li id="liabout-us"> <a href="./about.html" class="inmenu">About Us</a></li>
+          <li id="liproducts" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)"><a href="./products.html"
+              class="inmenu">Products</a>
+            <ul class="submenu">
+              <li class="side_nav1" id="HeadProCat1"><a href="#">Construction Machinery</a></li>
+              <li class="side_nav1" id="HeadProCat2"><a href="#">Logistics Equipment</a></li>
+              <li class="side_nav1" id="HeadProCat3"><a href="#">cinturato P7</a></li>
+              <li class="side_nav1" id="HeadProCat4"><a href="#">Quotation</a></li>
+            </ul>
+          </li>
+          <li id="linewslist-1"> <a href="./news.html" class="inmenu">News</a></li>
+          <li id="liInfo"><a href="./info.html" class="inmenu">Knowledges</a></li>
+          <li id="licontact-us"> <a href="./contact.html" class="inmenu">Contact Us</a></li>
+          <li id="liinquiry"> <a href="./inquiry.html" class="inmenu_1">Feedback</a></li>
+        <% } %>
+      </ul>
+    </nav>
+    <div id="xyz">
+      <div class="xyz12">
+        <span class="up"></span>
+        <ul>
+          <li id="liDropD_En"><a href="#"><img src="../images/Common2/en.png">English</a>
+          </li>
+          <li><a href="#"><img src="../images/Common2/tr.png">türkiye</a></li>
+          <li><a href="#"><img src="../images/Common2/si.png">slovenščina</a></li>
+          <li><a href="#"><img src="../images/Common2/pt.png">Português</a></li>
+          <li><a href="#"><img src="../images/Common2/mww.png">Bai Miaowen</a></li>
+          <li><a href="#"><img src="../images/Common2/il.png">עברית</a></li>
+          <li><a href="#"><img src="../images/Common2/gr.png">Ελληνικά</a></li>
+          <li><a href="#"><img src="../images/Common2/my.png">Melayu</a></li>
+          <li><a href="#"><img src="../images/Common2/se.png">Svenska</a></li>
+          <li><a href="#"><img src="../images/Common2/dk.png">dansk</a></li>
+        </ul>
+    </div>
+  </div>
+  </div>
+</header>
