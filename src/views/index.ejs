@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>index</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>index</title>
-</head>
+  <body>
+    <!-- 页头 -->
+    <% var indexPage = 'home' %> <% include ./includes/head.ejs %>
 
-<body>
-  <!-- 页头 -->
-  <% var indexPage = 'home' %>
-  <% include ./includes/head.ejs %>
+    <!-- 页面主体 -->
+    <main>
+      <h2 style="width: 1000px; font-weight: bold; margin: 0 auto; text-align: center; padding: 30px 0; font-size: 28px">
+        Index
+      </h2>
+      <div style="width: 1000px; margin: 0 auto">
+        <h1 style="font-size: 16px; margin: 20px 0">一行4列布局：</h1>
+        <ul class="list-4">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div style="width: 1000px; margin: 0 auto">
+        <h1 style="font-size: 16px; margin: 20px 0">一行2列布局：</h1>
+        <ul class="list-2">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div style="width: 1000px; margin: 0 auto">
+        <h1 style="font-size: 16px; margin: 20px 0">一行1列布局：</h1>
+        <ul class="list-1">
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div style="width: 1000px; margin: 0 auto">
+        <h1 style="font-size: 16px; margin: 20px 0">一行6列正方形布局：</h1>
+        <ul class="list-6">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <br><br><br><br>
+    </main>
 
-  <!-- 页面主体 -->
-  <main>
-    <h2>首页</h2>
-  </main>
+    <!-- 页脚 -->
+    <% include ./includes/foot.ejs %>
 
-  <!-- 页脚 -->
-  <% include ./includes/foot.ejs %>
-
-  <div class="sm-mask"></div>
-  <script src="/js/jquery.js"></script>
-  <script src="/js/Site_Common.js"></script>
-</body>
-
+    <div class="sm-mask"></div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/Site_Common.js"></script>
+  </body>
 </html>
